@@ -1,0 +1,12 @@
+<app-toolbar></app-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #drawer mode="side" opened role="navigation" position='start'>
+      <app-nav-list></app-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+    <mat-sidenav #drawer mode="side" opened role="navigation" position='end'>
+        <app-side-nav></app-side-nav>
+    </mat-sidenav>
+</mat-sidenav-container>
